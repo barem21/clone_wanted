@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html,body{
+    padding:0;
+    margin:0;
+    color:#171719;
+    font-size:13px;
+    font-family:Pretendard Variable,Pretendard JP Variable,"Noto Sans KR",-apple-system,system-ui,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,Apple SD Gothic Neo,Nanum Gothic,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+    overflow-x:hidden;
+}
+a{
+    color: #171719;
+    font-family:Pretendard Variable,Pretendard JP Variable,"Noto Sans KR",-apple-system,system-ui,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,Apple SD Gothic Neo,Nanum Gothic,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+    text-decoration:none;
+}
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+img{
+    max-width:100%;
+}
