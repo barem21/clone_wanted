@@ -1,89 +1,151 @@
-.header{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background:#fff;
-    border-bottom:1px solid #eee;
-    z-index:100;
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
 }
-.header-wrap{
-    display:flex;
-    padding:12px 0px;
-    margin:0 auto;
-    justify-content:space-between;
-    max-width:1400px;
+.header-wrap {
+  display: flex;
+  height: 60px;
+  padding: 0px 5px;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1410px;
 }
-.header-left{
-    display:flex;
-    align-items:center;
+.header-left {
+  display: flex;
+  align-items: center;
 }
-.header-logo{
-    margin-right:50px;
+.header-logo {
+  margin-right: 50px;
 }
-.header-logo img{
-    height:32px;
+.header-logo img {
+  height: 32px;
 }
-.header-nav{
-    display:flex;
-    gap:40px;
+.header-nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-nav li:first-child a {
+  display: flex;
+  align-items: center;
+}
+.header-nav li:first-child img {
+  margin-right: 3px;
+}
+.header-nav a {
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-search {
+  height: 40px;
+  margin-right: 5px;
+}
+.header-search button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header-search button:hover {
+  background: #f5f5f5;
+}
+.header-search button svg {
+  width: 23px;
+  height: 23px;
+}
+.header-member {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.header-member .btn {
+  display: inline-block;
+  padding: 0px 14px;
+  border: 1px solid #ddd;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 32px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.header-member .btn:hover {
+  background: #f5f5f5;
+}
+.header-member .btn.join {
+  color: #06f;
+}
+/* 모바일 회원가입 버튼 */
+.header-member .mob-join,
+.header-mbmenu {
+  display: none;
+}
+
+/* 모바일 처리 */
+@media screen and (max-width: 992px) {
+  .header-search {
+    margin-right: 10px;
+  }
+  .header-member {
+    gap: 3px;
+  }
+  .header-member .btn.join {
+    display: none;
+  }
+  .header-member .btn.mob-join {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header-nav {
+    display: none;
+  }
+  .header-right {
+    gap: 0px;
+    flex-direction: row-reverse;
+  }
+  .header-member {
+    gap: 5px;
+  }
+  .header-member .business {
+    display: none;
+  }
+  .header-search {
+    margin-right: 0px;
+  }
+  .header-mbmenu {
+    display: block;
+  }
+  .header-mbmenu .btn-mbmenu {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
     align-items: center;
-}
-.header-nav li:first-child a{
-    display:flex;
-    align-items: center;
-}
-.header-nav li:first-child img{
-    margin-right:3px;
-}
-.header-nav a{
-    font-weight:600;
-    font-size:14px;
-}
-.header-right{
-    display:flex;
-    align-items: center;
-}
-.header-search{
-    height:40px;
-    margin-right:10px;
-}
-.header-search button{
-    width:40px;
-    height:40px;
-    border:none;
-    background:none;
-    border-radius:50px;
-    cursor:pointer;
-    transition: all 0.3s;
-}
-.header-search button:hover{
-    background:#f5f5f5;
-}
-.header-search button svg{
-    width:23px;
-    height:23px;
-}
-.header-member{
-    display:flex;
-    gap:8px;
-    align-items: center;
-}
-.header-member .btn{
-    display:inline-block;
-    padding:0px 14px;
-    border:1px solid #ddd;
-    font-weight:600;
-    font-size:12px;
-    line-height:32px;
-    border-radius:10px;
-    box-sizing:border-box;
-    background-color:#fff;
-    transition: all 0.3s;
-}
-.header-member .btn:hover{
-    background:#f5f5f5;
-}
-.header-member .btn.join{
-    color:#06f;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .header-mbmenu .btn-mbmenu svg {
+    width: 23px;
+    height: 23px;
+  }
 }
