@@ -29,6 +29,11 @@ footer {
 .footer-company p {
   margin-bottom: 8px;
 }
+.footer-company span {
+  margin: 0px 8px;
+  color: #ddd;
+  font-size: 10px;
+}
 .footer-link {
   margin-bottom: 28px;
 }
@@ -57,4 +62,41 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: flex-end;
+}
+
+/* 반응형 처리 */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 32px 0px 16px 0px;
+  }
+  .footer-wrap {
+    padding: 0px 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-logo img {
+    width: 98px;
+  }
+  .footer-menu {
+    margin-top: 24px;
+    justify-content: flex-start;
+  }
+  .footer-menu a {
+    font-size: 15px;
+  }
+  .footer-company {
+    font-size: 12px;
+  }
+  .footer-company p {
+    margin-bottom: 4px;
+  }
+  .footer-link a {
+    font-size: 12px;
+  }
+  .footer-copy {
+    gap: 8px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

@@ -149,3 +149,12 @@
     height: 23px;
   }
 }
+@media screen and (max-width: 768px) {
+  .header-wrap {
+    height: 56px;
+    padding: 0px 20px;
+  }
+  .header-right {
+    margin-right: -8px;
+  }
+}
